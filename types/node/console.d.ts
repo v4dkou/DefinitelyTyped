@@ -10,7 +10,7 @@ declare module 'console' {
              * If it is not, an `AssertionError` is thrown.
              * If provided, the error `message` is formatted using `util.format()` and used as the error message.
              */
-            assert(value: any, message?: string, ...optionalParams: any[]): void;
+            assert(value: any, message?: string, ...optionalParams: any[]): asserts value;
             /**
              * When `stdout` is a TTY, calling `console.clear()` will attempt to clear the TTY.
              * When `stdout` is not a TTY, this method does nothing.
